@@ -3,7 +3,7 @@ let text = document.getElementById('txt');
 let text2 = document.getElementById('txt2');
 let btn = document.getElementById('btn');
 let btn2 = document.getElementById('btn2');
-
+btn2.classList.add('display');
 window.addEventListener('load', ()=>{
     text.placeholder = new Date().getHours();
     text2.placeholder = new Date().getMinutes();
@@ -23,7 +23,6 @@ function alarm(){
 function setAlarm(){
     let d = new Date().toLocaleDateString();
     let then = new Date(`${d} ${text.value}:${text2.value}`).getTime();
-    // text.value = text.value %12|| 12;
     let now = new Date().getTime();
     let distance = then - now;
     var hours = Math.floor((distance % (1000*60*60*24)) / (1000*60*60));
@@ -33,14 +32,14 @@ function setAlarm(){
 
     if(distance<0){
         clearInterval(x);
-        para.innerHTML = `IT'S ALRAM TIME!`;
+        para.innerHTML = `IT'S ALARM TIME!`;
         let audio = new Audio('sound.mp3');
         audio.play();
-        btn2.style.visibility = 'visible';
+        btn2.classList.toggle('display');
         btn2.addEventListener('click', () =>{
             para.innerHTML = ``;
             audio.pause();
-            btn2.style.visiblity = 'hidden';
+            btn2.classList.toggle('display');
             text.value = '';
             text2.value = '';
         })

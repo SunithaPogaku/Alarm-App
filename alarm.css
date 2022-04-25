@@ -12,7 +12,7 @@ body{
 }
 nav{
     text-align:center;
-    padding:0.1 rem;
+    padding:0.1rem;
     color: var(--clr);
     /* background-color: var(--bg-sec); */
 }
@@ -24,7 +24,7 @@ nav{
     display:flex;
     flex-direction:column;
     align-items: center;
-    width: 40rem;
+    width: fit-content;
     border-radius: 10px;
 }
 span{
@@ -50,9 +50,9 @@ span{
     border-radius: 4px;
     background-color: hsl(217deg 99% 65%);
 }
-#btn2{
-    visibility:hidden;
-    display:block;
+.display{
+    /* visibility:hidden; */
+    display: none;
 }
 p{
     font-size:1.3rem;
