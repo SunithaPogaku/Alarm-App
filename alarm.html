@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="alarm.css">
     <title>Alarm Clock</title>
 </head>
 <body>
     <nav>
-        <h1>Alarm  App
-            <i class="far fa-clock"></i>
+        <h1><i class="far fa-clock"></i>
+            Alarm  App
         </h1>
     </nav>
     <div class = "container">
         <p>Enter the time</p>
         <div class = "inputs">
-            <input type="number" id="txt" placeholder="" class="time" autocomplete="off">
+            <input type="number" id="txt" class="time" autocomplete="off">
             <span>:</span>
-            <input type="number" id="txt2" placeholder = "" class="time" autocomplete="off">
+            <input type="number" id="txt2" class="time" autocomplete="off">
         </div>
         <div class="btns">
             <button id="btn" class="butt">SET</button>
@@ -27,5 +29,6 @@
             <p id="para"></p>
         </div>
     </div>
+    <script src ="alarm.js"></script>
 </body>
 </html>

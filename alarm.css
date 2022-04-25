@@ -14,7 +14,7 @@ nav{
     text-align:center;
     padding:0.1 rem;
     color: var(--clr);
-    background-color: var(--bg-sec);
+    /* background-color: var(--bg-sec); */
 }
 .container{
     margin: 5rem auto;
