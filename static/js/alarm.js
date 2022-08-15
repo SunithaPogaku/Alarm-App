@@ -33,7 +33,7 @@ function setAlarm(){
     if(distance<0){
         clearInterval(x);
         para.innerHTML = `IT'S ALARM TIME!`;
-        let audio = new Audio('sound.mp3');
+        let audio = new Audio('js/sound.mp3');
         audio.play();
         btn2.classList.toggle('display');
         btn2.addEventListener('click', () =>{
